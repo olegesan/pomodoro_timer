@@ -1,0 +1,75 @@
+html{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    background-image: url('https://images.unsplash.com/photo-1524678714210-9917a6c619c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3149&q=80');
+    background-size: cover;
+    font-family: 'Alata', sans-serif;
+    color: rgb(43, 42, 46);
+  }
+  body{
+      margin:0px;
+      min-height:100vh;
+  }
+  #timer-label{
+      font-size:5em;
+      width:100%;
+  }
+  #time-left{
+    font-size:3em;
+    width:100%;
+  }
+  .control{
+    font-size:3em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  .control-panel{
+    display: flex;
+    flex-flow: column;
+    
+  }
+  .time{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:300px;
+  }
+  .time > button, .timer-control-buttons > button{
+    min-height:50px;
+    min-width: 50px;
+    background-color:  rgba(245, 238, 252,0.5);
+    border-radius: 10px;
+    margin:0px 20px;
+    font-size: 0.4em;
+    border: 1px rgba(63, 63, 63, 0.445) solid;
+  }
+  .time > button:active, .timer-control-buttons > button:active{
+    transform:translate(2px,3px);
+  }
+  #time-left{
+    background-color: rgba(245, 238, 252, 0.3);
+    border-radius: 20px;
+  }
+  .timer-control-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top:5vh;
+    
+
+  }
+  .timer{
+    width:700px;
+  }
+  
+  .timer-control-buttons > button{
+    font-size:2rem;
+    padding:10px;
+  }
